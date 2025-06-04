@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('../../public/fonts/Intro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.font-intro {
+    font-family: 'Intro';
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
