@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>@yield('title')</title>
 
         <!-- Fonts -->
@@ -33,4 +33,30 @@
         @include('components.layout.footer')
 
     </body>
+    <script>
+        document.querySelectorAll('ul > li > button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                // Tutup semua submenu dulu
+                document.querySelectorAll('ul > li > button').forEach(btn => {
+                    btn.setAttribute('aria-expanded', 'false');
+                    document.getElementById(btn.getAttribute('aria-controls')).classList.add('hidden');
+                });
+                // Toggle submenu yang diklik
+                if (!expanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    document.getElementById(button.getAttribute('aria-controls')).classList.remove('hidden');
+                }
+                e.stopPropagation();
+            });
+        });
+
+        // Klik di luar menu akan menutup semua submenu
+        document.addEventListener('click', () => {
+            document.querySelectorAll('ul > li > button').forEach(btn => {
+                btn.setAttribute('aria-expanded', 'false');
+                document.getElementById(btn.getAttribute('aria-controls')).classList.add('hidden');
+            });
+        });
+    </script>
 </html>

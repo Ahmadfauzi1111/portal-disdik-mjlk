@@ -10,9 +10,9 @@
                 <div class="flex flex-col items-center justify-center">
                     <h1 class="lg:pt-5 text-white font-intro uppercase leading-normal text-center tracking-tight text-2xl md:text-4xl lg:text-[42px] mb-2 md:mb-3 lg:mb-2">Dinas Pendidikan Majalengka</h1>
 
-                    <h4 class="max-w-[350px] md:max-w-[600px] text-white font-intro uppercase text-center tracking-tight text-xl leading-normal md:text-3xl md:leading-relaxed lg:text-4xl lg:leading-relaxed mb-4 md:mb-6 lg:mb-12">#PROFESSIONAL, MELAYANI, MENCERDASKAN</h4>
+                    <h2 class="max-w-[550px] md:max-w-[600px] text-white font-intro uppercase text-center tracking-tight text-xl leading-normal md:text-3xl md:leading-relaxed sm:text-4xl lg:leading-relaxed mb-4 md:mb-6 lg:mb-12" style="font-size: 25px">#PROFESSIONAL, MELAYANI, MENCERDASKAN</h2>
 
-                    <p class="text-gray-300 font-lato font-medium leading-relaxed text-center max-w-xl lg:max-w-2xl mb-4 md:mb-7 text-sm md:text-base">Temukan informasi publik terkini dari Pemerinta Kabupaten Majalengka</p>
+                    <p class="text-gray-300 font-lato font-medium leading-relaxed text-center max-w-xl lg:max-w-2xl mb-4 md:mb-7 text-sm md:text-base">Temukan informasi publik terkini dari Dinas Pendidikan Majalengka</p>
 
                     <div class="max-w-xl lg:max-w-2xl w-full">
                         <div class="relative mb-8">
@@ -25,7 +25,7 @@
                                     </i>
                                 </div>
                                 <input type="text" class="flex-grow min-w-0 placeholder-gray-600 border-none focus:outline-none" placeholder="Cari">
-                                <button class="flex justify-between text-sm text-white bg-green-800 rounded-lg px-4 py-2">
+                                <button class="flex justify-between text-sm text-white bg-blue-800 rounded-lg px-4 py-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="animate-spin -ml-1 h-4 w-4 text-white" style="display:none;" data-v-626c2cb1=""><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25" data-v-626c2cb1=""></circle> <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" class="opacity-75" data-v-626c2cb1=""></path></svg>
                                         Cari
                                 </button>

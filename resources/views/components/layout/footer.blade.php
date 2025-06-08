@@ -1,18 +1,18 @@
-<footer class="bg-green-700 relative">
+<footer class="bg-blue-700 relative">
     <div class="container mx-auto px-6 2xl:px-0 xl:max-w-7xl">
         <div class="py-6 md:py-12 flex flex-col gap-6 md:gap-12 bg-no-repeat">
             <a href="/" target="null" class="w-[fit-content] nuxt-link-exact-active nuxt-link-active" aria-current="page">
-                <img src="{{ asset('images/logo.png') }}" width="197" height="38" alt="Beranda">
+                <img src="{{ asset('images/logo-disdik.png') }}" width="197" height="38" alt="Beranda">
             </a>
             <div class="min-w-0 grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between gap-6 text-white">
                 <div class="flex items-start gap-3"><img src="{{ asset('images/svg/location.svg') }}" alt="Lokasi" width="20" height="20" class="py-1">
                     <div class="flex flex-col gap-1">
                         <p class="font-roboto font-bold leading-7">
-                            Gedung Sate Bandung
+                            Majalengka
                         </p>
                         <div class="flex flex-col text-sm leading-6">
-                            <p>Jl. Diponegoro No. 22, Citarum, Bandung Wetan,</p>
-                            <p>Kota Bandung, Majalengka 40115</p>
+                            <p>Jl. Raya K H Abdul Halim No.233,</p>
+                            <p>Kabupaten Majalengka, Jawa Barat 45418</p>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                         <p class="font-roboto font-bold leading-7">
                             Surel
                         </p>
-                        <a href="mailto:info@jabarprov.go.id" class="text-sm leading-6">info@jabarprov.go.id</a>
+                        <a href="mailto:disdikmajalengkakab@gmail.com" class="text-sm leading-6">disdikmajalengkakab@gmail.com</a>
                     </div>
                 </div>
                 <div class="flex items-start gap-3">
@@ -108,14 +108,14 @@
                         <h2 class="font-bold leading-7">
                             Sitemap
                         </h2>
-                        <section class="flex flex-col min-w-0 -mt-4 divide-y divide-green-400 lg:hidden"
+                        <section class="flex flex-col min-w-0 -mt-4 divide-y divide-blue-400 lg:hidden"
                         >
                             <details class="py-4 footer__sitemap__menu">
                                 <summary class="flex items-center justify-between">
                                     <h3 class="font-bold">
                                         Berita Majalengka
                                     </h3>
-                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-green-600">
+                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-blue-600">
                                         <div fill="white" class="flex justify-center items-center transition-transform duration-150 ease-in cursor-pointer">
                                             <img src="{{ asset('images/svg/chevron-down.svg') }}" alt="" width="24" height="24">
                                         </div>
@@ -158,7 +158,7 @@
                                     <h3 class="font-bold" data-v-63132d51="">
                                         Layanan Publik
                                     </h3>
-                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-green-600"
+                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-blue-600"
                                         data-v-63132d51="">
                                         <div fill="white"
                                             class="flex justify-center items-center transition-transform duration-150 ease-in cursor-pointer"
@@ -210,7 +210,7 @@
                                     <h3 class="font-bold" data-v-63132d51="">
                                         Dashboard Publik
                                     </h3>
-                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-green-600"
+                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-blue-600"
                                         data-v-63132d51="">
                                         <div fill="white"
                                             class="flex justify-center items-center transition-transform duration-150 ease-in cursor-pointer"
@@ -262,7 +262,7 @@
                                     <h3 class="font-bold" data-v-63132d51="">
                                         Profil Majalengka
                                     </h3>
-                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-green-600"
+                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-blue-600"
                                         data-v-63132d51="">
                                         <div fill="white"
                                             class="flex justify-center items-center transition-transform duration-150 ease-in cursor-pointer"
@@ -312,7 +312,7 @@
                                     <h3 class="font-bold" data-v-63132d51="">
                                         PPID
                                     </h3>
-                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-green-600"
+                                    <div class="flex items-center justify-center w-6 h-6 rounded-full footer__sitemap__button hover:bg-blue-600"
                                         data-v-63132d51="">
                                         <div fill="white"
                                             class="flex justify-center items-center transition-transform duration-150 ease-in cursor-pointer"
@@ -393,44 +393,52 @@
                         <section
                             class="min-w-0 w-full hidden justify-between lg:grid lg:grid-cols-[repeat(auto-fill,minmax(240px,1fr))] lg:gap-y-8 lg:-ml-7"
                             data-v-63132d51="">
-                            <div class="border-r border-green-500 px-7 last-of-type:border-transparent"
+                            <div class="border-r border-blue-500 px-7 last-of-type:border-transparent"
                                 data-v-63132d51="">
                                 <h3 class="mb-2 text-base font-bold leading-6 font-roboto whitespace-nowrap"
                                     data-v-63132d51="">
-                                    Berita Majalengka
+                                    Profil
                                 </h3>
                                 <ul class="grid grid-flow-row gap-x-8 gap-y-2" data-v-63132d51="">
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=ekonomi"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Ekonomi
+                                            Profil Pejabat
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=kesehatan"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Kesehatan
+                                            Brand Identity
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=pendidikan"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Pendidikan
+                                            Sejarah
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=pemerintahan"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Pemerintahan
+                                            Struktur Organisasi
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=infrastruktur"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Infrastruktur
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=sosial"
-                                            target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Sosial
+                                            Bidang GTK
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=teknologi"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Teknologi
+                                            Bidang SD
+                                        </a></li>
+                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=teknologi"
+                                                                                   target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
+                                            Bidang SMP
+                                        </a></li>
+                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=teknologi"
+                                                                                   target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
+                                            Bidang PAUDIKMAS
+                                        </a></li>
+                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/berita?kategori=teknologi"
+                                                                                   target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
+                                            Bidang SEKERTARIAT
                                         </a></li>
                                 </ul>
                             </div>
-                            <div class="border-r border-green-500 px-7 last-of-type:border-transparent"
+                            <div class="border-r border-blue-500 px-7 last-of-type:border-transparent"
                                 data-v-63132d51="">
                                 <h3 class="mb-2 text-base font-bold leading-6 font-roboto whitespace-nowrap"
                                     data-v-63132d51="">
@@ -440,112 +448,51 @@
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Administrasi%20Kependudukan"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Administrasi Kependudukan
+                                            MUTASI SISWA
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Kelahiran"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Kelahiran
+                                            MAGANG/KKN/PKL/PENELITIAN
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Sekolah" target="null"
                                             class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Sekolah
+                                            LEGALISIR IJAZAH
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Pendidikan%20Tinggi"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Pendidikan Tinggi
+                                            SURAT KETERANGAN PENGGANTI IJAZAH
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Lowongan%20Pekerjaan"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Lowongan Pekerjaan
+                                            NUPTK
                                         </a></li>
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/layanan-fase-kehidupan/daftar-layanan?kategori=Kesehatan%20Individu%20%26%20Keluarga"
                                             target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Kesehatan Individu &amp; Keluarga
+                                            PENDIDIKAN PROFESI GURU (PPG)
                                         </a></li>
                                 </ul>
                             </div>
-                            <div class="border-r border-green-500 px-7 last-of-type:border-transparent"
+                            <div class="border-r border-blue-500 px-7 last-of-type:border-transparent"
                                 data-v-63132d51="">
                                 <h3 class="mb-2 text-base font-bold leading-6 font-roboto whitespace-nowrap"
                                     data-v-63132d51="">
-                                    Dashboard Publik
+                                    PUBLIKASI
                                 </h3>
                                 <ul class="grid grid-flow-row gap-x-8 gap-y-2" data-v-63132d51="">
                                     <li class="min-w-[95px]" data-v-63132d51=""><a
                                             href="/verifikasi-link?url=https%3A%2F%2Fdashboard.jabarprov.go.id%2Fid%2Ftopic%2Fkesehatan"
                                             target="_blank" rel="noopener noreferrer"
                                             class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Kesehatan
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Fdashboard.jabarprov.go.id%2Fid%2Ftopic%2Fkependudukan"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Kependudukan
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Fdashboard.jabarprov.go.id%2Fid%2Ftopic%2Findustri%2Findustri-vs-tenaga-kerja-vs-investasi-jawa-barat"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Industri
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Fdashboard.jabarprov.go.id%2Fid%2Ftopic%2Fpendidikan"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Pendidikan
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Fdashboard.jabarprov.go.id%2Fid%2Fdashboard-pikobar%2Ftrace%2Fstatistik"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Informasi Covid-19
+                                            BERITA ARTIKEL
                                         </a></li>
                                 </ul>
                             </div>
-                            <div class="border-r border-green-500 px-7 last-of-type:border-transparent"
-                                data-v-63132d51="">
-                                <h3 class="mb-2 text-base font-bold leading-6 font-roboto whitespace-nowrap"
-                                    data-v-63132d51="">
-                                    Profil Majalengka
-                                </h3>
-                                <ul class="grid grid-flow-row gap-x-8 gap-y-2" data-v-63132d51="">
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/selayang-pandang"
-                                            target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Selayang Pandang
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/tentang-jawa-barat/"
-                                            target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Tentang Majalengka
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/arsip-dan-dokumen"
-                                            target="null" class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Arsip dan Dokumen
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Fjdih.jabarprov.go.id"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Jaringan Dokumentasi dan Informasi Hukum
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a
-                                            href="/verifikasi-link?url=https%3A%2F%2Flpse.jabarprov.go.id"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Layanan Pengadaan Secara Elektronik
-                                        </a></li>
-                                    <li class="min-w-[95px]" data-v-63132d51=""><a href="/sapawarga" target="null"
-                                            class="text-sm font-normal leading-6" data-v-63132d51="">
-                                            Sapawarga
-                                        </a></li>
-                                </ul>
-                            </div>
-                            <div class="border-r border-green-500 px-7 last-of-type:border-transparent"
+                            <div class="border-r border-blue-500 px-7 last-of-type:border-transparent"
                                 data-v-63132d51="">
                                 <h3 class="mb-2 text-base font-bold leading-6 font-roboto whitespace-nowrap"
                                     data-v-63132d51="">
@@ -620,7 +567,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full py-4 lg:py-6 border-t border-green-500">
+    <div class="w-full py-4 lg:py-6 border-t border-blue-500">
         <div class="container mx-auto px-6 2xl:px-0 xl:max-w-7xl">
             <div class="flex flex-col items-center lg:items-start gap-5">
                 <p class="font-lato text-sm font-normal leading-6 text-white text-center lg:text-left">
