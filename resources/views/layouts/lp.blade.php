@@ -15,7 +15,6 @@
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="{{ asset('images/logo-majalengka.png') }}">
 
-        <!-- Styles / Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <meta name="googlebot" content="index, follow" />
@@ -59,4 +58,61 @@
             });
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab-btn");
+            const panes = document.querySelectorAll(".tab-pane");
+
+            // Inisialisasi: tampilkan hanya pane aktif (biasanya yang pertama)
+            panes.forEach(pane => {
+                if (pane.dataset.content === "1") {
+                    pane.classList.remove("hidden", "opacity-0");
+                    pane.classList.add("opacity-100");
+                } else {
+                    pane.classList.add("hidden", "opacity-0");
+                    pane.classList.remove("opacity-100");
+                }
+            });
+
+            // Inisialisasi tab highlight
+            tabs.forEach(tab => {
+                if (tab.dataset.tab === "1") {
+                    tab.classList.add("bg-blue-500");
+                } else {
+                    tab.classList.remove("bg-blue-500");
+                }
+            });
+
+            // Event listener tab switching
+            tabs.forEach(tab => {
+                tab.addEventListener("click", () => {
+                    const target = tab.dataset.tab;
+
+                    tabs.forEach(t => t.classList.remove("bg-blue-500"));
+                    tab.classList.add("bg-blue-500");
+
+                    panes.forEach(pane => {
+                        if (pane.dataset.content === target) {
+                            pane.classList.remove("hidden");
+                            setTimeout(() => {
+                                pane.classList.remove("opacity-0");
+                                pane.classList.add("opacity-100");
+                            }, 10);
+                        } else {
+                            pane.classList.remove("opacity-100");
+                            pane.classList.add("opacity-0");
+                            setTimeout(() => {
+                                pane.classList.add("hidden");
+                            }, 500);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+
 </html>

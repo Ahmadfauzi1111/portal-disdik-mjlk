@@ -30,13 +30,7 @@
                     aria-labelledby="btn-profile"
                 >
                     <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Tentang Kami</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Visi & Misi</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Tim Kami</a>
+                        <a href="/about" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Profile Pejabat</a>
                     </li>
                 </ul>
             </li>
