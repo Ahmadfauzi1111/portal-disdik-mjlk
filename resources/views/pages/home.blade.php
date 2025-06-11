@@ -6,7 +6,6 @@
 <div class="relative overflow-hidden">
     @include('components.home.jumbotron')
     @include('components.home.news')
-    {{-- @include('components.home.event') --}}
     @include('components.home.service')
 </div>
 @endsection

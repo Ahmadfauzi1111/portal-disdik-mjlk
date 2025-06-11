@@ -1,3 +1,32 @@
+@push('scripts')
+    <script>
+        document.querySelectorAll('ul > li > button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                // Tutup semua submenu dulu
+                document.querySelectorAll('ul > li > button').forEach(btn => {
+                    btn.setAttribute('aria-expanded', 'false');
+                    document.getElementById(btn.getAttribute('aria-controls')).classList.add('hidden');
+                });
+                // Toggle submenu yang diklik
+                if (!expanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    document.getElementById(button.getAttribute('aria-controls')).classList.remove('hidden');
+                }
+                e.stopPropagation();
+            });
+        });
+
+        // Klik di luar menu akan menutup semua submenu
+        document.addEventListener('click', () => {
+            document.querySelectorAll('ul > li > button').forEach(btn => {
+                btn.setAttribute('aria-expanded', 'false');
+                document.getElementById(btn.getAttribute('aria-controls')).classList.add('hidden');
+            });
+        });
+    </script>
+@endpush
+
 <nav class="fixed top-0 z-50 w-full flex flex-col bg-blue-700 transition-colors ease-brand duration-250 lg:bg-black/30 lg:backdrop-filter lg:backdrop-blur-lg lg:hover:bg-blue-700">
     <div class="container mx-auto flex items-center justify-between lg:justify-center px-4 sm:px-6 lg:px-8 h-20">
         <!-- Logo -->
@@ -25,12 +54,30 @@
                 </button>
                 <ul
                     id="submenu-profile"
-                    class="absolute top-full left-0 mt-1 bg-blue-700 rounded-md shadow-lg hidden min-w-[150px] z-10"
+                    class="absolute top-full left-0 mt-1 bg-blue-700 rounded-md shadow-lg hidden min-w-[250px] z-10"
                     role="menu"
                     aria-labelledby="btn-profile"
                 >
                     <li>
-                        <a href="/about" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Profile Pejabat</a>
+                        <a href="{{ route('profile.dinas') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Profile Disdik</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.office') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Profile Pejabat</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.secretariat') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Sekretariat</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.gtk') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Bidang GTK</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.pauddikmas') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Bidang Pauddikmas</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.sd') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Bidang SD</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('profile.smp') }}" class="block px-4 py-2 hover:bg-blue-600" role="menuitem">Bidang SMP</a>
                     </li>
                 </ul>
             </li>

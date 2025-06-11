@@ -1,7 +1,58 @@
 @extends('layouts.lp')
 
-@push('bootstrap-css')
-    <link href="{{ asset('finanza/css/bootstrap.min.css') }}" rel="stylesheet">
+@push('scripts')
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab-btn");
+            const panes = document.querySelectorAll(".tab-pane");
+
+            // Inisialisasi: tampilkan hanya pane aktif (biasanya yang pertama)
+            panes.forEach(pane => {
+                if (pane.dataset.content === "1") {
+                    pane.classList.remove("hidden", "opacity-0");
+                    pane.classList.add("opacity-100");
+                } else {
+                    pane.classList.add("hidden", "opacity-0");
+                    pane.classList.remove("opacity-100");
+                }
+            });
+
+            // Inisialisasi tab highlight
+            tabs.forEach(tab => {
+                if (tab.dataset.tab === "1") {
+                    tab.classList.add("bg-blue-500");
+                } else {
+                    tab.classList.remove("bg-blue-500");
+                }
+            });
+
+            // Event listener tab switching
+            tabs.forEach(tab => {
+                tab.addEventListener("click", () => {
+                    const target = tab.dataset.tab;
+
+                    tabs.forEach(t => t.classList.remove("bg-blue-500"));
+                    tab.classList.add("bg-blue-500");
+
+                    panes.forEach(pane => {
+                        if (pane.dataset.content === target) {
+                            pane.classList.remove("hidden");
+                            setTimeout(() => {
+                                pane.classList.remove("opacity-0");
+                                pane.classList.add("opacity-100");
+                            }, 10);
+                        } else {
+                            pane.classList.remove("opacity-100");
+                            pane.classList.add("opacity-0");
+                            setTimeout(() => {
+                                pane.classList.add("hidden");
+                            }, 500);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 @endpush
 
 @section('content')
@@ -77,7 +128,7 @@
                     <div class="tab-content w-full space-y-6 transition-all duration-500 ease-in-out">
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="1">
                             <div class="flex flex-col items-center text-center space-y-4">
-                                <div class="w-full lg:max-w-[45%]">
+                                <div class="w-full lg:max-w-[50%]">
                                     <img src="{{ asset('images/wabup.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
                                 </div>
                                 <h3 class="text-2xl font-semibold">Kepala Dinas Pendidikan</h3>
@@ -85,11 +136,10 @@
                         </div>
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="2">
                             <div class="flex flex-col items-center text-center space-y-4">
-                                <div class="w-full lg:max-w-[40%]">
-                                    <img src="{{ asset('images/wabup.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
+                                <div class="w-full lg:max-w-[50%]">
+                                    <img src="{{ asset('images/sekdis.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
                                 </div>
-                                <h3 class="text-2xl font-semibold">Kepala Dinas Pendidikan</h3>
-                                <p class="text-gray-700 max-w-xl">Sambutan dari Kepala Dinas Pendidikan mengenai layanan pendidikan dan visi ke depan dalam meningkatkan kualitas belajar.</p>
+                                <h3 class="text-2xl font-semibold">Plt. Sekertaris Dinas</h3>
                             </div>
                         </div>
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="3">
@@ -104,29 +154,25 @@
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="4">
                             <div class="flex flex-col items-center text-center space-y-4">
                                 <div class="w-full lg:max-w-[40%]">
-                                    <img src="{{ asset('images/wabup.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
+                                    <img src="{{ asset('images/sekdis.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
                                 </div>
-                                <h3 class="text-2xl font-semibold">Kepala Dinas Pendidikan</h3>
-                                <p class="text-gray-700 max-w-xl">Sambutan dari Kepala Dinas Pendidikan mengenai layanan pendidikan dan visi ke depan dalam meningkatkan kualitas belajar.</p>
+                                <h3 class="text-2xl font-semibold">Kepala Bidang Pauddikmas</h3>
                             </div>
                         </div>
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="5">
                             <div class="flex flex-col items-center text-center space-y-4">
                                 <div class="w-full lg:max-w-[40%]">
-                                    <img src="{{ asset('images/wabup.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
+                                    <img src="{{ asset('images/irma.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
                                 </div>
-                                <h3 class="text-2xl font-semibold">Kepala Dinas Pendidikan</h3>
-                                <p class="text-gray-700 max-w-xl">Sambutan dari Kepala Dinas Pendidikan mengenai layanan pendidikan dan visi ke depan dalam meningkatkan kualitas belajar.</p>
-                            </div>
+                                <h3 class="text-2xl font-semibold">Kepala Bidang SD</h3>
+                                </div>
                         </div>
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="6">
                             <div class="flex flex-col items-center text-center space-y-4">
                                 <div class="w-full lg:max-w-[40%]">
-                                    <img src="{{ asset('images/wabup.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
+                                    <img src="{{ asset('images/memet.png') }}" class="w-full object-cover rounded" alt="Kepala Dinas Pendidikan">
                                 </div>
-                                <h3 class="text-2xl font-semibold">Kepala Dinas Pendidikan</h3>
-                                <p class="text-gray-700 max-w-xl">Sambutan dari Kepala Dinas Pendidikan mengenai layanan pendidikan dan visi ke depan dalam meningkatkan kualitas belajar.</p>
-                            </div>
+                                <h3 class="text-2xl font-semibold">Kepala Bidang SMP</h3></div>
                         </div>
                         <div class="tab-pane active opacity-100 transition-opacity duration-500 ease-in-out" data-content="7">
                             <div class="flex flex-col items-center text-center space-y-4">
