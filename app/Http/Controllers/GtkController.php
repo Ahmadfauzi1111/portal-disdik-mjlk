@@ -8,6 +8,6 @@ class GtkController extends Controller
 {
     public function index()
     {
-        return view('pages.profile.gtk.index');
+        return view('auth.pages.profile.gtk.index');
     }
 }

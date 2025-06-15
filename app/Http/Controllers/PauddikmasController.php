@@ -8,6 +8,6 @@ class PauddikmasController extends Controller
 {
     public function index()
     {
-        return view('pages.profile.pauddikmas.index');
+        return view('auth.pages.profile.pauddikmas.index');
     }
 }

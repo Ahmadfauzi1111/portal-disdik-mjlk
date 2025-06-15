@@ -8,6 +8,6 @@ class DinasController extends Controller
 {
     public function index()
     {
-        return view('pages.profile.dinas.index');
+        return view('auth.pages.profile.dinas.index');
     }
 }

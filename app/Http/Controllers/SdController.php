@@ -8,6 +8,6 @@ class SdController extends Controller
 {
     public function index()
     {
-        return view('pages.profile.sd.index');
+        return view('auth.pages.profile.sd.index');
     }
 }

@@ -8,6 +8,6 @@ class SecretariatController extends Controller
 {
     public function index()
     {
-        return view('pages.profile.secretariat.index');
+        return view('auth.pages.profile.secretariat.index');
     }
 }

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SmpController extends Controller
+class ProfilePpidController extends Controller
 {
     public function index()
     {
-        return view('auth.pages.profile.smp.index');
+        return view('auth.pages.ppid.profile_ppid.index');
     }
 }
